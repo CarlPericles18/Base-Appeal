@@ -1,0 +1,264 @@
+/*### Gradients
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+*/
+
+:root{
+    --DesaturatedRed: hsl(0, 36%, 70%);
+    --SoftRed: hsl(0, 93%, 68%);
+    --DarkGrayishRed: hsl(0, 6%, 24%);
+    --font-family: 'Josefin Sans', sans-serif;
+    --Linear: 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+    --Linear: 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-bottom: 30vh;
+    
+}
+
+
+.logoBox{
+    padding: 30px;
+
+}
+
+.logoBox img{
+    width: 100px;
+}
+.womanPic img{
+    
+    
+
+}
+
+.womanPic2{
+    display: none;
+}
+.box1{
+    margin: 40px 50px 20px 60px;
+    font-family: var(--font-family);
+    text-align: center;
+    letter-spacing: .7em;
+    color: var(--DarkGrayishRed);
+    line-height: 2.3em;
+    font-size: 18px;
+}
+
+#newTitle{
+    color: var(--DesaturatedRed);
+    font-weight: 300;
+}
+
+.box2{
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 1.6em;
+    color: var(--DesaturatedRed);
+    margin: 0 30px 30px 30px;
+}
+
+.box3{
+    display: flex;
+    position: relative;
+    padding: 15px 0 15px 20px;
+    border: 1px solid var(--DesaturatedRed);
+    margin: 0 30px 0 30px;
+    border-radius: 100px ;
+    font-family: var(--font-family);
+    color: var(--DesaturatedRed);
+    font-weight: 300;
+    font-size: 13px;
+    border-right: var(--SoftRed);
+    
+}
+.boxX{
+    display: flex;
+    position: relative;
+    padding: 15px 0 15px 20px;
+    border: 2px solid var(--SoftRed) ;
+    margin: 0 30px 0 30px;
+    border-radius: 100px;
+    font-family: var(--font-family);
+    color: var(--DesaturatedRed);
+    font-weight: 300;
+    font-size: 13px;
+    border-right: var(--SoftRed);
+}
+
+
+
+.arrowLabel{
+    
+     border-radius: 50px;
+     width: 50px;
+     position: absolute;
+     right:0;
+     bottom: 0;
+     top: 0;
+     padding: 10px;
+     background: linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%)),
+                 linear-gradient(135deg, hsl(0, 0%, 100%),  hsl(0, 100%, 98%));
+     box-shadow: 0px 0px 20px var(--DesaturatedRed);   
+     cursor:pointer
+           
+    }
+.arrowLabel img{
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+
+.error{
+    display: none;
+    position: relative;
+    width: 110px;
+    
+}
+
+
+.errorActive{
+    display: block;
+    position: relative;
+    right: 80px;
+   
+}
+
+
+
+#submit {
+    border: none;
+    outline: none;
+    font-family: var(--font-family);
+    color: black;
+    font-weight: 300;
+    font-size: 13px;
+    width: 250px;
+}
+::placeholder{
+    color: var(--DesaturatedRed);
+    
+}
+
+
+
+.errorMessage{
+    color: var(--SoftRed);
+    margin: 10px 0 0 35px;
+    font-family: var(--font-family);
+    font-size: 15px;
+}
+
+
+@media  (min-width: 900px){
+  
+    body{
+        padding-bottom: 0vh;
+      
+    }
+    .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    
+    
+  
+   }
+
+
+   .headerBox{
+    grid-column: 1/2;
+   }
+   .headerBox2{
+       grid-column: 2;
+       grid-row: 1/3;
+   }
+   .boxBox{
+    grid-row: 2;
+   }
+
+.logoBox{
+    margin: 60px 0 0 120px;
+   
+}
+.logoBox img{
+    width: 170px;
+}
+
+.headerBox2{
+    margin: 0 0 0 auto;
+}
+.womanPic {
+    display: none;
+    
+    
+}
+.womanPic2{
+    display: block;
+    
+    
+}
+.womanPic2 img{
+  
+    height: 830px;
+    
+    
+}
+.box1{
+    margin:50px 0 0 150px ;
+    font-size: 35px;
+    text-align: left;
+}
+.box2{
+    font-size: 20px;
+    margin: 30px 0 0 150px ;
+    text-align: left;
+}
+
+.box3{
+    margin: 30px 0 0 150px ;
+    padding: 20px;
+}
+.arrowLabel{
+    width: 90px;
+  
+}
+.arrowLabel img{
+    position: relative;
+    margin: 5px 30px 10px 20px;
+    
+   
+  
+}
+
+::placeholder{
+    font-size: 20px;
+}
+#submit{
+    font-size: 20px;
+}
+
+.boxX{
+    display: flex;
+    position: relative;
+    padding: 20px 0 20px 20px;
+    border: 2px solid var(--SoftRed) ;
+    margin: 0 30px 0 140px;
+    border-radius: 100px;
+    font-family: var(--font-family);
+    color: var(--DesaturatedRed);
+    font-weight: 300;
+    font-size: 13px;
+    border-right: var(--SoftRed);
+}
+
+.errorMessage{
+    color: var(--SoftRed);
+    margin: 10px 0 0 145px;
+    font-family: var(--font-family);
+    font-size: 20px;
+}
